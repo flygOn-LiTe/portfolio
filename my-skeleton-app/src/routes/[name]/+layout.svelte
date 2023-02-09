@@ -3,22 +3,12 @@
 import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 </script>
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
-    <svelte:fragment slot="sidebarLeft">
-	<!-- Insert the list: -->
-	<nav class="list-nav">
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-		</ul>
-	</nav>
-	<!-- --- -->
-</svelte:fragment>
+<AppShell>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase"><a href="/">Rowberry</a></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -27,7 +17,7 @@ import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 					target="_blank"
 					rel="noreferrer"
 				>
-					Discord
+					Contact
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
@@ -35,7 +25,7 @@ import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 					target="_blank"
 					rel="noreferrer"
 				>
-					Twitter
+					LinkedIn
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
