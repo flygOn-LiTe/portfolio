@@ -1,8 +1,9 @@
 <script>
+    import { page } from '$app/stores';
     export let data;
     const { user } = data;
     const name = user.user.name;
-
+   
     const projects = [
         {title: "Moon Bay", description: "web3 nft app built with next.js"},
         {title: "Berry Widgets", description: "Simple e-commerce solution"},
@@ -22,11 +23,14 @@
 </ol>
 
 <div class="h-screen flex justify-center items-start text-center py-10">
-    <h1>
-       Hello <span class="gradient-heading">
-		{name}, nice to meet you!
-	</span>Welcome to my cave!
-    </h1>
+    <div>
+    <h1>Welcome <span class="gradient-heading">{name}</span>, nice to meet you!</h1>
+    <div class="card w-80 m-auto mt-10">
+    <img class="rounded-lg w-full" width="200" height="200" alt="Andrew" src="/andrew2.jpeg" />
+    <h2>About Me</h2>
+    <p>......BLAH BLAH BLAH BLAH BLAH</p>
+</div>
+</div>
 </div>
 <h1 class="gradient-heading py-2 text-center">Check out my Projects {name}!</h1>
 <div class="text-center flex justify-center h-screen">
