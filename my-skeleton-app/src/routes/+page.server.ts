@@ -50,8 +50,6 @@ export const actions = {
 		}
 		if (success === true) {
 			throw redirect(303, `/${formData.name}`);
-		} else {
-			return 'failed mfer!';
 		}
 	}
 } satisfies Actions;
