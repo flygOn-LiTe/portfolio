@@ -24,21 +24,21 @@ export const actions = {
 				httpOnly: true,
 				sameSite: 'strict',
 				secure: process.env.NODE_ENV === 'production',
-				maxAge: 60 * 60 * 24 * 7 // 1 week
+				maxAge: 60 * 60 // 1 hour
 			});
 			cookies.set('name', `${formData.name}`, {
 				path: '/',
 				httpOnly: true,
 				sameSite: 'strict',
 				secure: process.env.NODE_ENV === 'production',
-				maxAge: 60 * 60 * 24 * 7 // 1 week
+				maxAge: 60 * 60 // 1 hour
 			});
 			cookies.set('choice', `${formData.choice}`, {
 				path: '/',
 				httpOnly: true,
 				sameSite: 'strict',
 				secure: process.env.NODE_ENV === 'production',
-				maxAge: 60 * 60 * 24 * 7 // 1 week
+				maxAge: 60 * 60 // 1 hour
 			});
 		} catch (err: any) {
 			const { fieldErrors: errors } = err.flatten();
